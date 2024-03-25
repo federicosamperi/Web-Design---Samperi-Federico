@@ -1,0 +1,19 @@
+h1 {
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) { 
+  h1 {
+    color: blue;
+  }
+}
+
+img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  img {
+    width: 49%;
+  }
+}
