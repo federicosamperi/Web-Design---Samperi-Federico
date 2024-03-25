@@ -1,0 +1,93 @@
+.footer {
+	text-align: center;
+}
+
+h2 {
+	color: blue;
+	font-size: 30px;
+	font-family: "Poppins", sans-serif;
+}
+
+h1 {
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+}
+
+p {
+	font-family: "Poppins", sans-serif;
+	font-size: 15px;
+}
+
+a {
+	color: #0016e0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+header {
+	background-color: #FE9900;
+}
+
+main {
+	background-color: #FC7A57;
+}
+
+footer {
+	background-color: #FCD757;
+}
+
+img {
+	max-width: 50%;
+    border: 5px dotted blue; 
+
+}
+
+.immagini {
+    display: grid; /* Utilizza il display grid per creare una griglia */
+    grid-template-columns: 1fr 1fr 1fr; /* Due colonne di larghezza uguale */
+    gap: 10px; /* Spazio tra le immagini */
+}
+
+.immagini img {
+    border: 5px dotted blue;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.immagini-artista3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.immagini-artista3 img {
+    border: 5px dotted blue;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Navigazione home page */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav a {
+    width: 30%;
+    max-width: 30%;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.nav img {
+    max-width: 100%;
+    height: auto;
+}
