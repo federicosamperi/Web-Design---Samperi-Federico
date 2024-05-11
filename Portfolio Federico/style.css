@@ -1,0 +1,600 @@
+/* ######## GLOBALE ########  */
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0A3FD9;
+}
+
+.logoLink {
+    text-decoration: none;
+}
+
+nav {
+    flex: 1; /* Imposta la navigazione per occupare lo spazio rimanente */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /* Allinea gli elementi del menu a destra */
+}
+
+nav ul li {
+    margin-right: 30px; /* Distanza tra gli elementi del menu */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Rimuove il margine destro dall'ultimo elemento del menu */
+}
+
+nav ul li a {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #0a3fd9;
+}
+
+a:active {
+    color: #0a3fd9;
+}
+
+img {
+    pointer-events: none;
+    /* Disabilitare drag and drop delle immagini all'interno di tutte le pagine */
+}
+
+.linkProgetto:visited {
+    color: #0a3fd9;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #E6E6E6;
+}
+
+/* ######## GLOBALE ########  */
+
+
+/* ######## HOME ########  */
+
+.introduzione img /* Immagine di presentazione in home page */ {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0px 5px 0px;
+}
+
+.introduzione h1 {
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 50px;
+    color: #0A3FD9;
+    margin: 0;
+    padding: 0;
+}
+
+.introduzione p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    color: #929292;
+    margin: 0;
+    padding: 10px;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px; /* Ridotto il massimo per garantire spazio sufficiente per 3 progetti su una riga */
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.progetto {
+    background-color: #fff;
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /* Ridotto il margine per far sì che ci siano sempre e comunque 3 progetti su una riga */
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid transparent;
+    max-width: calc(33.33% - 20px); /* Impostato il massimo larghezza al 33.33% meno il margine */
+    box-sizing: border-box; /* Assicura che il padding non influisca sulla larghezza massima */
+    transition: border 0.1s ease-out;
+}
+
+.progetto:hover {
+    border: 3px solid #0A3FD9;
+}
+
+.progetto img {
+    max-width: 70%;
+    height: auto;
+}
+
+.progetto h2 {
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 600;
+    font-size: 24px; /* Ridotto il font size per rendere più piccolo */
+    color: #0A3FD9;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.progetto p {
+    margin: 5px 0 15px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px; /* Ridotto il font size per rendere più piccolo */
+    color: #929292;
+    text-align: center;
+}
+
+.progetto a {
+    text-decoration: none;
+}
+
+.progetto a:visited {
+    color: #0A3FD9;
+}
+
+/* ----- >768px (mobile) */
+
+@media screen and (max-width: 767px) {
+    .progetto {
+        max-width: 100%; /* Imposta la larghezza massima al 100% per dispositivi mobili */
+    }
+}
+
+/* ----- >768px (mobile) */
+
+
+.portfolioLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioButton {
+    display: inline-block;
+    justify-content: center;
+    padding: 18px 20px;
+
+    background-color: #0A3FD9;
+    color: #ffffff;
+
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 3px;
+
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+
+    transition : background-color 0.1s ease-out;
+}
+
+.portfolioButton:hover {
+    background-color: #072b94;
+}
+
+
+
+.brands {
+    max-width: 2000px;
+    padding: 80px;
+    margin: 0 auto;
+}
+
+.brands p { /* Paragrafo "HO LAVORATO CON" */
+    text-align: center;
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #929292;
+}
+
+.brandLogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.brandLogos img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 20px;
+}
+
+/* Loghi clienti - MOBILE */
+@media (max-width: 768px) {
+    .brands {
+        padding: 40px;
+    }
+
+    .brandLogos {
+        max-width: 100%;
+        justify-content: center;
+    }
+}
+
+/* *************** */
+
+.contatti img {
+  display: block;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0px 5px 0px;
+}
+
+.contatti h2 {
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 40px;
+    color: #0A3FD9;
+    margin: 0;
+    padding: 0;
+}
+
+.contatti p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    color: #929292;
+    margin: 0 20px 20px;
+    padding: 10px;
+}
+
+.infoContatto {
+    text-align: center;
+}
+
+.infoContatto h3 {
+  margin-bottom: 5px;
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.infoContatto a {
+    text-decoration: none;
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-size: 20px;
+}
+
+
+
+footer {
+    max-width: 2000px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.nameInfo {
+    text-align: left;
+}
+
+.nameInfo h2 { 
+    margin-bottom: 15px;
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #0A3FD9;
+}
+
+.nameLink {
+    color: #0A3FD9;
+    text-decoration: none;
+}
+
+.nameLink:visited {
+    color: #0A3FD9;
+    text-decoration: none;
+}
+
+.nameInfo p {
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #929292;
+    margin: 0;
+}
+
+.mail {
+    text-decoration: none;
+}
+
+hr {
+    border-top: 1px solid #c9c9c9;
+    margin: 15px 0;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between; /* Spaziatura tra gli elementi */
+    align-items: center;
+    color: #808080;
+}
+
+.iconeSocial, .iconeSocial a {
+    display: flex;
+    color: #808080;
+    font-size: 20px;
+    justify-content: space-between;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.legal a {
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #929292;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+/* Footer - Mobile */
+
+@media (max-width: 768px) {
+
+    .nomeFooter { 
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #0A3FD9;
+    }
+
+.infoFooter {
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;
+    color: #929292;
+    margin: 0;
+    }
+}
+
+/* ************ */
+
+
+/* PAGINA PORTFOLIO */
+
+.portfolioDiv {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0px 5px 0px;
+}
+
+.portfolioDiv a {
+    font-family: Plus Jakarta Sans, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #0A3FD9;
+    text-decoration: underline;
+}
+
+.portfolioDiv a:visited {
+    font-family: Plus Jakarta Sans, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #0A3FD9;
+    text-decoration: underline;
+}
+
+.portfolioDiv a:visited {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.portfolioDiv h1 {
+  font-family: Plus Jakarta Sans, sans-serif;
+  font-weight: 800;
+  text-align: center;
+  font-size: 50px;
+  color: #0A3FD9;
+  margin: 0;
+  padding: 10px 0px 5px 0px;
+  margin-bottom: 1px;
+}
+
+.portfolioDiv p {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 20px;
+  color: #929292;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+
+/* Pagina progetto */
+
+.portfolioDiv {
+    text-align: center;
+}
+
+.projectSubtitle {
+    text-align: center;
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: #929292;
+}
+
+.portfolioDiv h1 {
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 50px;
+    color: #0A3FD9;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    padding: 1px 0px 5px 0px;
+}
+
+.projectDesc {
+    margin: 0 50px;
+    padding: 0px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #929292;
+    text-align: center;
+}
+
+
+.containerProgetto {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 20px;
+    max-width: 2000px;
+}
+
+.sidebarInfo {
+    margin: 50px;
+    border-radius: 10px;
+    background-color: rgba(10, 63, 217, 0.4);
+    padding: 30px;
+    grid-column: 1; /* Assegna questa sezione alla prima colonna */
+    align-self: start; /* Allinea la barra laterale all'inizio del suo spazio nella griglia */
+    height: auto; /* Imposta l'altezza in base al contenuto */
+    max-width: 250px;
+    border-left: 5px solid #0A3FD9;
+}
+
+div.sidebarInfo { /* Sidebar fissa durante lo scorrimento */
+    position: sticky;
+    top: 0;
+}
+
+.sidebarInfo h2 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.sidebarInfo ol {
+    list-style-type: none;
+    line-height: 2;
+    color: #000;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.contactAncoraggio {
+    color: #0A3FD9;
+}
+
+.contactAncoraggio:visited {
+    text-decoration: none;
+}
+
+.projectBody {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-size: cover;
+    background-image: url('assets/progetti/editingseu/hero.png');
+    object-fit: contain;
+    margin: 50px;
+    background-position: center;
+    height: 80vh;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 50vh; /* o qualsiasi altezza desideri per dispositivi più piccoli */
+    }
+
+    .containerProgetto {
+        grid-template-columns: 1fr; /* Utilizza una singola colonna */
+        margin: 50px;
+        text-align: center;
+    }
+
+    .showcaseProgetto {
+        grid-row: 1; /* Assicura che la descrizione sia nella stessa riga della sidebar */
+    }
+
+    .sidebarInfo {
+        min-width: 70%; /* Imposta una larghezza minima */
+        margin: 20px auto; /* Centra la sidebar orizzontalmente */
+    }
+}   
+}
+
+.showcaseProgetto {
+    max-width: 2000px;
+    grid-column: 2; /* Assegna questa sezione alla prima colonna */
+}
+
+.showcaseProgetto h2 {
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;  
+}
+
+.showcaseProgetto p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+}
